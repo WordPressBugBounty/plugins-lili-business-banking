@@ -1,0 +1,670 @@
+:root {
+  --lili-primary-color: #0e5cf4;
+  --lili-primary-color-hover: #0042c4;
+  --lili-text-color: #20242E;
+  --lili-text-color-gray: #1E1E1E;
+  --lili-font-inter: 'Inter', sans-serif;
+}
+
+.content-wrap {
+  width: 430px;
+  margin: 0 auto;
+}
+
+.padding-14 {
+  padding: 0 14px;
+}
+
+.lili_plugin {
+  max-width: 1200px;
+  margin: 50px auto 10px;
+}
+
+.lili_plugin .button-secondary {
+  border: 0;
+  background: inherit !important;
+}
+
+.lili_plugin_container {
+  background: white;
+  border-radius: 10px;
+}
+
+.lili_plugin_container.with-border {
+  border: 1px solid #C4CBDC;
+}
+
+.lili_plugin_header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lili_plugin_header.inside_container {
+  padding: 20px;
+  border-bottom: 1px solid #C4CBDC;
+}
+
+.lili_plugin_header .btn-primary {
+  min-width: 188px;
+}
+
+.lili_plugin_header_buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.lili_plugin_tabs {
+  display: grid;
+  grid-template-columns: 1fr 564px;
+}
+
+.lili_plugin_tabs__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+.lili_plugin_tabs__content .heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.lili_plugin_tabs__content .heading .tab-button {
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  height: 60px;
+  padding: 0 20px;
+  color: var(--lili-text-color-gray);
+  cursor: pointer;
+  position: relative;
+}
+
+.lili_plugin_tabs__content .heading .tab-button:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #DDDDDD;
+}
+
+.lili_plugin_tabs__content .heading .tab-button.active:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--lili-primary-color);
+}
+
+.lili_plugin_tabs__content .tab-content {
+  display: none;
+}
+
+.lili_plugin_tabs__content .tab-content.active {
+  display: block;
+}
+
+.lili_plugin_tabs__content .customer_content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  color: var(--lili-text-color);
+  font-family: var(--lili-font-inter);
+}
+
+.lili_plugin_tabs__content .customer_content__heading {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.lili_plugin_tabs__content .customer_content__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 138%;
+}
+
+.lili_plugin_tabs__content .customer_content__benefits {
+  margin: 20px 0 0;
+}
+
+.lili_plugin_tabs__content .customer_content__benefits ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.lili_plugin_tabs__content .customer_content__benefits ul li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 153%;
+  margin: 0 0 16px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.lili_plugin_tabs__content .customer_content__benefits ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNyAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjkxODkgNS4wMjczNEw3LjQ3MDYyIDEwLjUyNzNMNS4xNjg5NSA4LjQ2NzM0IiBzdHJva2U9IiMwRTVDRjQiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.lili_plugin_tabs__content .customer_content__cta {
+  margin: 10px 0 0;
+}
+
+.lili_plugin_tabs__content .customer_content__cta a {
+  width: 100%;
+  text-align: center;
+}
+
+.lili_plugin_tabs__content .customer_content__cta .login {
+  margin: 12px 0 0;
+  text-align: center;
+  color: var(--lili-text-color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.lili_plugin_tabs__content .customer_content__cta .login a {
+  color: var(--lili-primary-color);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.lili_plugin_tabs__content .badges {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.lili_plugin_tabs__thumb {
+  min-height: 650px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lili_plugin .lili-message {
+  margin: 10px 0 0 !important;
+}
+
+.lili_plugin .lili_login_form__title {
+  color: var(--lili-text-color-gray);
+  font-family: var(--lili-font-inter);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.lili_plugin .lili_login_form form {
+  position: relative;
+}
+
+.lili_plugin .lili_login_form form.loading input,
+.lili_plugin .lili_login_form form.loading textarea,
+.lili_plugin .lili_login_form form.loading select,
+.lili_plugin .lili_login_form form.loading label {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.lili_plugin .lili_login_form form.loading .form_wrap::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lili_plugin .lili_login_form form .form_wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  margin: 10px 0 0;
+}
+
+.lili_plugin .lili_login_form form .form_wrap.login {
+  margin: 30px 0 0;
+}
+
+.lili_plugin .lili_login_form form .form_wrap:before {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  content: "";
+  background: url(../images/loader.svg) no-repeat;
+  background-position: center 100px;
+  background-size: 50px;
+}
+
+.lili_plugin .lili_login_form form .form_wrap__otp_step {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.lili_plugin .lili_login_form form .form_wrap__title {
+  color: var(--lili-text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 138%;
+}
+
+.lili_plugin .lili_login_form form .form_wrap__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.lili_plugin .lili_login_form form .form_wrap__group label {
+  color: var(--lili-text-color);
+  font-family: var(--lili-font-inter);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 153%;
+}
+
+.lili_plugin .lili_login_form form .form_wrap__group label.small {
+  font-size: 11px;
+  color: var(--lili-text-color-gray);
+}
+
+.lili_plugin .lili_login_form form .form_wrap__group input[type="text"],
+.lili_plugin .lili_login_form form .form_wrap__group input[type="password"] {
+  border-radius: 2px;
+  border: 1px solid #949494;
+  background: #fff;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.lili_plugin .lili_login_form form .form_wrap__group.submit-wrap {
+  margin: 15px 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.lili_plugin .lili_login_form form .form_wrap__group.submit-wrap.otp {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lili_plugin .lili_login_form form .form_wrap__group.submit-wrap.otp .btn-primary {
+  max-width: 150px;
+}
+
+.lili_plugin .lili_login_form form .form_wrap__group.submit-wrap .btn-primary {
+  width: 100%;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.lili_plugin .lili_login_form form .form_wrap__group.submit-wrap a {
+  text-align: center;
+  margin: 5px 0 0;
+  color: var(--lili-primary-color);
+  font-family: var(--lili-font-inter);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.lili_plugin .lili_dashboard {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 50px;
+}
+
+.lili_plugin .lili_dashboard__balances {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.lili_plugin .lili_dashboard__balances .balance-box {
+  border-radius: 4px;
+  border: 1px solid #C4CBDC;
+  padding: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 34px;
+  min-height: 100px;
+}
+
+.lili_plugin .lili_dashboard__balances .balance-box .heading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lili_plugin .lili_dashboard__balances .balance-box .heading label {
+  color: var(--lili-text-color);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.lili_plugin .lili_dashboard__balances .balance-box .heading .number {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 5px;
+}
+
+.lili_plugin .lili_dashboard__balances .balance-box .heading .number .currency {
+  color: var(--lili-text-color);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.lili_plugin .lili_dashboard__balances .balance-box .heading .number span {
+  color: var(--lili-text-color);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.lili_plugin .lili_dashboard__balances .balance-box .heading .info {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.lili_plugin .lili_dashboard__balances .balance-box .text p {
+  margin: 0;
+}
+
+.lili_plugin .lili_dashboard__balances .balance-box.checking_balance {
+  border: 1px solid #DFE2EB;
+}
+
+.lili_plugin .lili_dashboard__transactions {
+  margin-top: 35px;
+}
+
+.lili_plugin .lili_dashboard__transactions .title {
+  color: var(--lili-text-color);
+  font-family: var(--lili-font-inter);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lili_plugin .lili_dashboard__transactions .transaction-table {
+  margin-top: 12px;
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.lili_plugin .lili_dashboard__transactions .transaction-table thead {
+  background-color: #F6F7FA;
+}
+
+.lili_plugin .lili_dashboard__transactions .transaction-table thead th {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #DFE2EB;
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.lili_plugin .lili_dashboard__transactions .transaction-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #DFE2EB;
+  font-size: 14px;
+  color: #000;
+}
+
+.lili_plugin .lili_dashboard__transactions .transaction-table tr:last-child td {
+  border-bottom: none;
+}
+
+.lili_plugin .lili_dashboard__transactions .transaction-table tr:hover {
+  background: #f8f9fa;
+}
+
+.lili_plugin .lili_dashboard__transactions .transaction-table .amount.positive {
+  color: #00B16A;
+}
+
+.lili_plugin .lili_dashboard__transactions .transaction-table .amount.negative {
+  color: #000;
+}
+
+.lili_plugin .lili_disclaimer ul {
+  padding: 0 0 0 15px;
+  list-style-type: decimal;
+}
+
+.lili_plugin .lili_disclaimer ul li {
+  font-size: 10px;
+  color: #525D71;
+}
+
+.lili_plugin .otp-input-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0;
+}
+
+.lili_plugin .otp-input-group .otp-input {
+  width: 56px !important;
+  height: 56px;
+  text-align: center;
+  border: 1px solid #C4CBDC !important;
+  border-radius: 8px !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.lili_plugin .otp-input-group .otp-input:focus {
+  outline: none;
+  border-color: #007bff;
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.lili_plugin .disclaimer_text_wrap {
+  color: #7C8593;
+  text-align: center;
+  font-family: var(--lili-font-inter);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+@media (max-width: 991px) {
+  .content-wrap {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .lili_plugin_tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .lili_plugin_tabs__thumb {
+    min-height: inherit;
+  }
+
+  .lili_plugin_tabs__thumb img {
+    width: 100%;
+    height: auto;
+  }
+}
