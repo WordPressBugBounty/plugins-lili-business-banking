@@ -77,7 +77,7 @@ function lili_admin_bar_menu($wp_admin_bar)
         'id' => 'lili-integration-open',
         'parent' => 'lili-integration',
         'title' => 'Open Account for Free',
-        'href' => 'https://lp.lili.co/lili-for-ecommerce/?utm_medium=partners&utm_source=wprepo&utm_campaign=menu',
+        'href' => apply_filters('lili_open_account_url_menu', 'https://lp.lili.co/lili-for-ecommerce/?utm_medium=partners&utm_source=wprepo&utm_campaign=menu'),
         'meta' => array('target' => '_blank', 'title' => 'Open an account at Lili'),
     ));
 
@@ -130,9 +130,11 @@ function lili_render_dashboard_widget()
             holders only; applicable monthly account fees apply. For details, please refer to your Sunrise Banks Account
             Agreement.</p>
         <p>
-            <a href="https://lp.lili.co/lili-for-ecommerce/?utm_medium=partners&utm_source=wprepo&utm_campaign=dashboard"
+            <a href="<?php echo esc_url(apply_filters('lili_open_account_url_dashboard', 'https://lp.lili.co/lili-for-ecommerce/?utm_medium=partners&utm_source=wprepo&utm_campaign=dashboard')); ?>"
                target="_blank"
-               class="button button-primary">Open Account for Free</a>
+               class="button button-primary">
+                Open Account for Free
+            </a>
         </p>
     </div>
     <?php

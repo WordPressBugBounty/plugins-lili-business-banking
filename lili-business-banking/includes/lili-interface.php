@@ -229,9 +229,11 @@ function lili_display_login_form()
                                 </div>
 
                                 <div class="customer_content__cta">
-                                    <a href="https://lp.lili.co/lili-for-ecommerce/?utm_medium=partners&utm_source=wprepo&utm_campaign=plugin"
-                                       target="_blank" class="button button-primary button-hero">Open Account for
-                                        Free</a>
+                                    <a href="<?php echo esc_url(apply_filters('lili_open_account_url_plugin', 'https://lp.lili.co/lili-for-ecommerce/?utm_medium=partners&utm_source=wprepo&utm_campaign=plugin')); ?>"
+                                       target="_blank"
+                                       class="button button-primary button-hero">
+                                        Open Account for Free
+                                    </a>
                                 </div>
 
                             </div>
